@@ -351,14 +351,14 @@
             return `
                 <span class="tooltip-container">
                     <i class="info-icon">ℹ️</i>
-                    <span class="tooltip-text">Order is ascending (lower to higher)</span>
+                    <span class="tooltip-text">Ranking is ascending (lower value to higher)</span>
                 </span>
             `;
         }
         
         // Accuracy section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Ranking by Accuracy (DESC) ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Accuracy (ASC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Accuracy"].forEach(item => {
             listHTML += `<li>${item}</li>`;
@@ -368,7 +368,7 @@
         
         // Training Time section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Ranking by Training Time (DESC) ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Training Time (ASC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Tarining Time"].forEach(item => {
             listHTML += `<li>${item}</li>`;
@@ -378,7 +378,7 @@
         
         // Test Time section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Ranking by Test Time (DESC) ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Test Time (ASC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Test Time"].forEach(item => {
             listHTML += `<li>${item}</li>`;
