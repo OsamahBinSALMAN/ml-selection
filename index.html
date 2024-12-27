@@ -358,7 +358,7 @@
         
         // Accuracy section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Accuracy ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Accuracy (DESC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Accuracy"].forEach(item => {
             listHTML += `<li>${item}</li>`;
@@ -368,7 +368,7 @@
         
         // Training Time section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Training Time ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Training Time (DESC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Tarining Time"].forEach(item => {
             listHTML += `<li>${item}</li>`;
@@ -378,7 +378,7 @@
         
         // Test Time section
         listHTML += '<div class="section">';
-        listHTML += `<h3>Test Time ${addTooltip()}</h3>`;
+        listHTML += `<h3>Ranking by Test Time (DESC) ${addTooltip()}</h3>`;
         listHTML += '<ol>'; // Use <ol> for a numerical list
         resultData["Test Time"].forEach(item => {
             listHTML += `<li>${item}</li>`;
