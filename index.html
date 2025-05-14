@@ -307,7 +307,7 @@
         e.preventDefault();
 
 	const resultDiv_ = document.getElementById('result'); // Ensure this matches your result container's ID
-    	resultDiv_.innerHTML = `<div class="alert alert-info">Processing your request, please wait...</div>`;
+    	resultDiv_.innerHTML = `<div class="alert alert-info">Processing your request, please wait...<br><small>Note: This application is running on a free plan, so the response may take a bit longer the first time. Thank you for your patience.</small></div`;
 
         // Prepare FormData object
         const formData = new FormData();
